@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="id=edge" />
+    <title>Notebook</title>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+</head>
+<body>
+    <h1>
+        Notebook
+    </h1>
+    <p>
+        Theory on <strong>html</strong> and <strong>css</strong>
+        from tutorials from different sources. The main knowledge is
+        taken from 
+        <a href="https://www.w3schools.com/html/default.asp">W3Schools</a> 
+        and 
+        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app">freeCodeCamp.org</a>.
+    </p>
+    <table>
+        <tr>
+            <th>Content</th>
+            <th>Description</th>
+            <th>Source</th>
+        </tr>
+        <!-- .HTML AND .HTM -->
+        <tr>
+            <td>.html / .htm</td>
+            <td>You can use either .htm or .html as file extension. There is no difference; it is up to you.</td>
+            <td><a href="https://www.w3schools.com/html/html_editors.asp">w3schools</a></td>
+        </tr>
+        <!-- EMPTY ELEMENTS -->
+        <tr>
+            <td>Empty elements</td>
+            <td>Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</td>
+            <td><a href="https://www.w3schools.com/html/html_elements.asp">w3schools</a></td>
+        </tr>
+        <!-- RELATIVE URLS -->
+        <tr>
+            <td>When to use relative URLs</td>
+            <td>It is almost always best to use relative URLs. They will not break if you change domain.</td>
+            <td><a href="https://www.w3schools.com/html/html_attributes.asp">w3schools</a></td>
+        </tr>
+        <!-- IMAGES -->
+        <tr>
+            <td>&lt;img&gt; tag</td>
+            <td>
+                The &lt;img&gt; tag should contain
+                <ul>
+                    <li>width and height attributes (not required, but img can flicker while loading)</li>
+                    <li>alt attribute (alternate text for an image, read with screen reader)</li>
+                    <li>src attribute</li>
+                </ul>
+                <p>HTML has width and height, but use CSS, so that the last cannot change HTML size.</p>
+                <p>Background image of p element:  &lt;p style="background-image: url('img_girl.jpg');"&gt; </p>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_attributes.asp">w3schools</a></td>
+        </tr>
+        <!-- HEADINGS -->
+        <tr>
+            <td>Headings Are Important</td>
+            <td>
+                <p>Search engines use the headings to index the structure and content of your web pages.</p>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_headings.asp">w3schools</a></td>
+        </tr>
+        <!-- CSS -->
+        <tr>
+            <td>CSS properties - values (styles)</td>
+            <td>
+                <ul>
+                    <li>background-color</li>
+                    <li>color</li>
+                    <li>font-family</li>
+                    <li>font-size</li>
+                    <li>text-align</li>
+                    <li>background-image: url('img_girl.jpg');</li>
+                    <li>background-repeat: no-repeat;</li>
+                    <li>background-size: cover; / 100% 100%; (will stretch in the last option even with background-attachment)</li>
+                    <li>background-attachment: fixed; (the image will keep its original proportions)</li>
+                </ul>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_styles.asp">w3schools</a></td>
+        </tr>
+        <!-- HTML FORMATTING ELEMENTS -->
+        <tr>
+            <td>html formatting elements (tags)</td>
+            <td>
+                <ul>
+                    <li>&lt;b&gt;: <b>text</b> </li>
+                    <li>&lt;strong&gt;: <strong>text</strong></li>
+                    <li>&lt;i&gt;: <i>text</i></li>
+                    <li>&lt;em&gt;: <em>text</em></li>
+                    <li>&lt;mark&gt;: <mark>text</mark></li>
+                    <li>&lt;small&gt;: <small>small</small></li>
+                    <li>&lt;del&gt;: <del>text</del></li>
+                    <li>&lt;ins&gt;: <ins>text</ins></li>
+                    <li>&lt;sub&gt;: <sub>text</sub></li>
+                    <li>&lt;sup&gt;: <sup>text</sup></li>
+                </ul>
+                &lt;b&gt; VS &lt;strong&gt;
+                <br>
+                b is without any extra importance (just higher text weight)
+                <br>
+                strong is text with strong importance
+                <br>
+                &lt;i&gt; VS &lt;em&gt;
+                <br>
+                i - a technical term, a phrase from another language, a thought, a ship name, etc.
+                <br>
+                em - A screen reader will pronounce the words in em with an emphasis, using verbal stress.
+
+                <ul>
+                    <li>&lt;blockquote&gt;: a section that is quoted from another source. 
+                        <p><blockquote cite="http://www.worldwildlife.org/who/index.html">
+                            For 50 years, WWF has been protecting the future of nature.
+                            The world's leading conservation organization,
+                            WWF works in 100 countries and is supported by
+                            1.2 million members in the United States and
+                            close to 5 million globally.
+                            </blockquote></p>
+                    </li>
+                    <li>&lt;q&gt;: <q>This text is quoted with &lt;q&gt; tag.</q></li>
+                    <li>&lt;abbr&gt;: <abbr title="World Health Organization">WHO</abbr> (check the source code) </li>
+                    <li>&lt;address&gt;: <address>Written by John Doe.<br> 
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA</address></li>
+                    <li>&lt;cite&gt;: <cite>Defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)</cite></li>
+                    <li>&lt;bdo&gt;: <bdo dir="rtl">Used to override the current text direction</bdo>. Unfortunately bdo in bdo doesn't nullify the effect</li>
+                    
+                </ul>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_quotation_elements.asp">w3schools</a></td>
+        </tr>
+        <!-- COLORS -->
+        <tr>
+            <td>Colors</td>
+            <td>
+                HTML supports 140 standard color names.<br>
+                Color can be set to:
+                <ul>
+                    <li>background</li>
+                    <li>border</li>
+                    <li>text</li>
+                </ul>
+                Besides the predefined color names, colors can be specified using:
+                <ul>
+                    <li>RGB</li>
+                    <li>HSL - hue, saturation, lightness</li>
+                    <li>HEX</li>
+                    <li>RGBA - "A" is alpha (transparency)</li>
+                    <li>HSLA</li>
+                </ul>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_colors.asp">w3schools</a></td>
+        </tr>
+        <!-- LINKS -->
+        <tr>
+            <td>Links</td>
+            <td>
+                By default, the linked page will be displayed in the 
+                current browser window. To change this, you must specify another 
+                target for the link.<br>
+                The target attribute specifies where to open the linked document.
+                <table>
+                    <tr>
+                        <td>(same window or tab)</td>
+                        <td>&lt;a href="#" target="_self"&gt;Link text&lt;/a&gt; 
+                        <td><a href="#" target="_self"> - Try</a></td>
+                    </tr>
+                    <tr>
+                        <td>(in the parent frame)</td>
+                        <td>&lt;a href="#" target="_parent"&gt;Link text&lt;/a&gt; 
+                        <td><a href="#" target="_parent"> - Try</a></td>
+                    </tr><tr>
+                        <td>(in the full body of the window)</td>
+                        <td>&lt;a href="#" target="_top"&gt;Link text&lt;/a&gt; 
+                        <td><a href="#" target="_top"> - Try</a></td>
+                    </tr><tr>
+                        <td>(new window or tab)</td>
+                        <td>&lt;a href="#" target="_blank"&gt;Link text&lt;/a&gt; 
+                        <td><a href="#" target="_blank"> - Try</a></td>
+                    </tr>
+                </table>
+                <p>How to make an a tag a button:</p>
+                <pre>
+                    a:link, a:visited {
+                    background-color: #f44336;
+                    color: white;
+                    padding: 15px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                  }
+                  
+                  a:hover, a:active {
+                    background-color: red;
+                  }
+                </pre>
+                <p>CSS actions:</p>
+                <ul>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:hover</li>
+                    <li>:active</li>
+                </ul>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_links.asp">w3schools</a></td>
+        </tr>
+        <!-- IMAGE MAP -->
+        <tr>
+            <td>Image map</td>
+            <td>
+                Example:
+                <pre>
+                    &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+                    &lt;map name="workmap"&gt;
+                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+                    &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+                    &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;
+                    &lt;/map&gt;
+                </pre> 
+                Map can be these shapes:
+                <ul>
+                    <li>rect: "34, 44, 270, 350"</li>
+                    <li>circle: "337, 300, 44" (center, radius)</li>
+                    <li>poly: "140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"</li>
+                    <li>default - defines the entire region</li>
+                </ul>
+                Image map + JavaScript:
+                <pre>
+                    &lt;map name="workmap"&gt;
+                        &lt;area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()"&gt;
+                      &lt;/map&gt;
+                      
+                      &lt;script&gt;
+                      function myFunction() {
+                        alert("You clicked the coffee cup!");
+                      }
+                      &lt;/script&gt; 
+                </pre>
+            </td>
+            <td><a href="https://www.w3schools.com/html/html_images_imagemap.asp">w3schools</a></td>
+        </tr>
+    </table>
+</body>
+</html>
